@@ -1,0 +1,150 @@
+<!-- Contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A University Website Design </title>
+    <link rel="stylesheet" href="one.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,600;0,700;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="sub-header" </section>
+        <nav>
+            <a href="index.html"><img src="logo.png" </a>
+                <div class="nav-links" id="navLinks">
+                    <div class="ban">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="ban">
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+                </div>
+        </nav>
+        <h1>CONTACT US</h1>
+    </section>
+
+    <!-- -----CONTACT US---- -->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1781619.1120631157!2d76.0389249!3d29.290406899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390db00b8670400b%3A0x732eaab4aaa6c143!2sHaryana!5e0!3m2!1sen!2sin!4v1691652749380!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>123 University Lane
+                            Academic City
+                        </h5>
+                        <h5> Imaginary State, IS 98765</h5>
+                        <p>United States</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+1484-1234-4598</h5>
+                        <p>Monday to Saturday,10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>eduford@edu.in</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form onsubmit="sendmsg();reset();return false;">
+                    <input type="text" name="name" id="name"placeholder="Enter Your Name" required>
+                    <input type="text" name="email" id="email"placeholder="Enter Email Address" required>
+                    <input type="text" name="subject" id="subject"placeholder="Enter Your subject" required>
+                    <textarea rows="8" name="message" id="message"placeholder="Message" required></textarea>
+                    <button type="submit" class="herobtn redbtn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!----Javascript for toggle menu-->
+    <script src=" https://smtpjs.com/v3/smtp.js">
+    </script>
+                        <script>
+                            var navlinks = document.getElementById("navLinks")
+                            function showMenu() {
+                                navLinks.style.right = "0";
+                            }
+                            function hideMenu() {
+                                navLinks.style.right = "-200px";
+                            }
+
+                            function sendmsg() {
+                                Email.send({
+                                    Host: "smtp.elasticemail.com",
+                                    Username: "coderbhai07@gmail.com",
+                                    Password: "B7928778EB19DB62F35B6B47F77CDE11A8F3",
+                                    To: 'mridul0741.be23@chitkara.edu.in',
+                                    From: "coderbhai07@gmail.com",
+                                    Subject: "About my front end project",
+                                    Body: "name:"+document.getElementById("name").value +
+                                    "<br>email:"+document.getElementById("email").value +
+                                    "<br>subject:"+document.getElementById("subject").value +
+                                    "<br>message:"+document.getElementById("message").value
+                                }).then(
+                                    message => alert("message sent successfully")
+                                );
+                            }
+
+                        </script>
+
+                        <!------AABOUT US CONTENT--->
+
+
+
+
+                        <!----Footer---->
+
+                        <section class="footer">
+                            <h4>ABOUT US</h4>
+                            <p>A primary mission of our university is to provide high-quality education that empowers
+                                students with
+                                knowledge, critical thinking skills, and intellectual curiosity. Universities aim to
+                                cultivate well-rounded
+                                individuals who are prepared for lifelong learning and can contribute to society.</p>
+                            <div class="icons">
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-linkedin"></i>
+
+                            </div>
+                            <p>Made with<i class="fa fa-heart-o"></i> By Mridul,Mehakpreet & Mishthy Sharma</p>
+                        </section>
+
+
+
+
+</body>
+
+</html>

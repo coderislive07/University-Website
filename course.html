@@ -1,0 +1,135 @@
+<!-- Course.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A University Website Design </title>
+    <link rel="stylesheet" href="one.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,600;0,700;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="sub-header"
+        <nav>
+            <a href="index.html"><img src="logo.png"</a>
+                <div class="nav-links"id="navLinks">
+                    <div class="ban">
+                    <i class="fa fa-times" onclick="hideMenu()"></i></div>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="ban">
+                <i class="fa fa-bars"  onclick="showMenu()"></i></div>
+        </nav>
+         <h1>Courses We Offer</h1>
+    </section>
+
+    <!--Course-->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p class="slog">Way to Excellence !</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Global Programmes</h3>
+                <p>We offer study abroad programs that allow students to spend a semester or academic year studying in a
+                    foreign country. These programs expose students to different cultures, languages, and academic
+                    systems while earning credits toward their degree.<br>International Exchange Programs: Universities
+                    often have partnerships with institutions in other countries, enabling students to participate in
+                    exchange programs. Exchange students typically switch places with a student from the partner
+                    university, immersing themselves in the host culture while continuing their studies</p>
+            </div>
+            <div class="course-col">
+                <h3>Under-Graduate Programmes</h3>
+                <p>We offer :-<br>Bachelor of Arts (BA): Typically focuses on liberal arts, humanities, and social
+                    sciences.
+                    Bachelor of Science (BS): Often emphasizes natural and physical sciences, mathematics, and
+                    engineering.
+                    Bachelor of Business Administration (BBA): Focuses on business and management disciplines.
+                    Bachelor of Fine Arts (BFA): Concentrates on the visual or performing arts.
+                    Bachelor of Engineering (BEng): Specializes in engineering and related fields.<br>
+                    Duration: Undergraduate programs typically take three to four years to complete, depending on the
+                    country and the specific degree program. Some programs, like engineering or architecture, may take
+                    longer.<br>
+
+                    General Education: Undergraduate education often includes a general education component, where
+                    students take courses in a variety of disciplines to develop well-rounded knowledge and skills</p>
+            </div>
+            <div class="course-col">
+                <h3>Post-Graduate Programmes</h3>
+                <p>We offer Master's Degrees , These programs typically require one to two years of study and include
+                    coursework, research, and sometimes internships or projects. Examples include Master of Arts (MA),
+                    Master of Science (MS), Master of Business Administration (MBA), and Master of Engineering (MEng).
+                    Doctoral Degrees: Doctoral programs, such as Doctor of Philosophy (Ph.D.) or Doctor of Education
+                    (Ed.D.), are research-focused and usually take several years to complete. They require the
+                    completion of a significant original research project, often a dissertation.<br>
+                    Professional Degrees: Some postgraduate programs are designed to prepare students for specific
+                    professions, such as medicine (Doctor of Medicine, MD), law (Juris Doctor, JD), or pharmacy (Doctor
+                    of Pharmacy, Pharm.D.).
+                </p>
+            </div>
+        </div>
+    </section>
+
+        
+
+
+        
+   
+        
+
+
+
+
+
+
+
+        <!----Javascript for toggle menu-->
+        <script>
+            var navlinks = document.getElementById("navLinks")
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+
+
+
+
+<!----Footer---->
+
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>A primary mission of our university is to provide high-quality education that empowers students with
+        knowledge, critical thinking skills, and intellectual curiosity. Universities aim to cultivate well-rounded
+        individuals who are prepared for lifelong learning and can contribute to society.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        
+    </div>
+    <p>Made with<i class="fa fa-heart-o"></i> By Mridul,Mehakpreet & Mishthy Sharma</p>
+</section>
+
+
+
+
+</body>
+
+</html>

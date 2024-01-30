@@ -1,0 +1,93 @@
+<!-- About.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A University Website Design </title>
+    <link rel="stylesheet" href="one.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,600;0,700;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="sub-header" </section>
+        <nav>
+            <a href="index.html"><img src="logo.png" </a>
+                <div class="nav-links"id="navLinks">
+                    <div class="ban">
+                    <i class="fa fa-times" onclick="hideMenu()"></i></div>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="ban">
+                <i class="fa fa-bars"  onclick="showMenu()"></i></div>
+        </nav>
+         <h1>ABOUT US</h1>
+    </section>
+        <!----Javascript for toggle menu-->
+        <script>
+            var navlinks = document.getElementById("navLinks")
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+            function openclick()
+            {
+                alert("Explore our courses and enroll them");
+                window.open("course.html");
+            }
+
+    
+        </script>
+
+<!------ABOUT US CONTENT--->
+
+<section class="about us">
+    <div class="row">
+        <div class="about-col">
+        <h1>We are the world's largest university</h1>
+        <p>Our University primarily dedicated to providing high-quality education and fostering a culture of learning. This includes undergraduate and graduate degree programs, as well as opportunities for lifelong learning.Universities often have a strong commitment to advancing knowledge through research and scholarly activities. This involves conducting research in various fields and disciplines to contribute to the body of knowledge and solve complex problems.</p> 
+        <button class="herobtn redbtn"onclick="openclick()">EXPLORE NOW</button>
+        </div>
+        <div class="about-col">
+            <img src="about.jpg">
+        </div>
+    </div>
+    </section>
+
+
+
+<!----Footer---->
+
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>A primary mission of our university is to provide high-quality education that empowers students with knowledge, critical thinking skills, and intellectual curiosity. Universities aim to cultivate well-rounded individuals who are prepared for lifelong learning and can contribute to society.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        
+    </div>
+    <p>Made with<i class="fa fa-heart-o"></i> By Mridul , Mehakpreet & Mishthy Sharma</p>
+</section>
+
+
+
+
+</body>
+
+</html>

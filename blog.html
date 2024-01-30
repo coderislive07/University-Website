@@ -1,0 +1,187 @@
+<!-- Blog.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A University Website Design </title>
+    <link rel="stylesheet" href="one.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,600;0,700;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="sub-header" </section>
+        <nav>
+            <a href="index.html"><img src="logo.png" </a>
+                <div class="nav-links" id="navLinks">
+                    <div class="ban">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="ban">
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+                </div>
+        </nav>
+        <h1>Our Certificate & Online Programmes For 2023</h1>
+    </section>
+
+    <!-- ----Blog page content---- -->
+    <div class="row">
+        <div class="blog-left">
+            <img src="certificate.jpg">
+            <h2>Our Certificate & Online Programmes For 2023</h2>
+            <p> 1. Purpose and Benefits: Certificate programs at a university are designed to provide focused,
+                specialized knowledge and skills in a particular field or subject area. They are often shorter in
+                duration compared to traditional degree programs and are aimed at helping individuals acquire specific
+                expertise. Certificate programs can be valuable for career advancement, skill enhancement, or exploring
+                new areas of interest.<br>
+
+                2. Program Variety: Universities offer a wide range of certificate programs, covering diverse subjects
+                such as business, healthcare, technology, arts and humanities, and more. These programs are typically
+                tailored to meet the needs of professionals, career changers, or lifelong learners.<br>
+                3. Duration: The duration of certificate programs varies, with some lasting a few months and others
+                extending up to a year or more. They often provide a flexible schedule to accommodate working
+                professionals and part-time learners.<br>
+
+                4. Curriculum: Certificate program curricula focus on specific, practical skills and knowledge relevant
+                to the chosen field. They may include a combination of coursework, workshops, projects, and
+                assessments.<br>
+                Online Programs:<br>
+
+                1. Accessibility: Online programs at universities offer flexibility, allowing students to access course
+                materials and complete assignments from anywhere with an internet connection. This accessibility is
+                especially beneficial for individuals who cannot attend classes on campus due to work, family, or
+                geographical constraints.<br>
+
+                2. Diverse Offerings: Online programs cover a wide range of disciplines, mirroring the diversity of
+                traditional on-campus programs. Universities often offer bachelor's, master's, and even doctoral degrees
+                online in fields like business, education, healthcare, and technology.<br>
+
+                3. Learning Platforms: Universities utilize various online learning platforms to deliver course content,
+                facilitate discussions, and conduct assessments. These platforms are designed to provide an engaging and
+                interactive online learning experience</p>
+
+
+            <div class="comment-box">
+                <h3>Leave a comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="text" placeholder="Email">
+                    <textarea rows="5" placeholder="your comment"></textarea>
+                    <button type="submit" class="herobtn redbtn"onclick="postclick()">Post Your Comment</button>
+                </form>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div class="span">
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div class="span">
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+            <div class="span">
+                <span>Machine Learning</span>
+                <span>15</span>
+            </div>
+            <div class="span">
+                <span>Computer Science</span>
+                <span>34</span>
+            </div>
+            <div class="span">
+                <span>AutoCAD</span>
+                <span>42</span>
+            </div>
+            <div class="span">
+                <span>Journalism</span>
+                <span>22</span>
+            </div>
+            <div class="span">
+                <span>Commerce</span>
+                <span>30</span>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>A primary mission of our university is to provide high-quality education that empowers students with
+            knowledge, critical thinking skills, and intellectual curiosity. Universities aim to cultivate well-rounded
+            individuals who are prepared for lifelong learning and can contribute to society.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+
+        </div>
+        <p>Made with<i class="fa fa-heart-o"></i> By Mridul,Mehakpreet & Mishthy Sharma</p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!----Javascript for toggle menu-->
+    <script>
+        var navlinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+        function postclick()
+        {
+            alert("Your valuable comment has beeen submitted")
+        }
+    </script>
+
+    <!------AABOUT US CONTENT--->
+
+
+
+
+    <!----Footer---->
+
+
+
+
+
+</body>
+
+</html>
